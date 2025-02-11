@@ -4,50 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Currículo</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="style.css"></script>
 </head>
-<body>
-    <header>
-        <h1>Pedro Soares</h1>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 py-4 px-6 fixed w-full flex justify-between items-center shadow-lg">
+        <h1 class="text-2xl font-bold text-orange-500">Pedro Soares</h1>
         <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="#sobre" class="hover:text-orange-400">Sobre</a></li>
+                <li><a href="#experiencia" class="hover:text-orange-400">Experiência</a></li>
+                <li><a href="#habilidades" class="hover:text-orange-400">Habilidades</a></li>
+                <li><a href="#contato" class="hover:text-orange-400">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section id="hero">
-      <img src="20240922_091924.jpg" alt="Pedro's photo">
-      <h1>Hi, I'm Pedro</h1>
-      <h2>I'm a QA Analyst</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur at architecto incidunt quisquam molestiae veniam porro, ex fuga voluptatem. Error sint at eligendi assumenda quidem itaque beatae veritatis. Numquam.</p>
-    </section>
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou QA e entusiasta de tecnologia, buscando sempre aprender e melhorar minhas habilidades.</p>
+
+    <section id="hero" class="flex items-center min-h-screen bg-gray-900 text-white px-8">
+        <div class="flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto">
+            <!-- Imagem -->
+            <img src="89a749c2-7ef6-4a89-9c09-83bbc5fb7b03.jpeg" 
+                alt="Pedro's photo" 
+                class="w-60 h-60 rounded-full border-4 border-orange-500 shadow-lg object-cover" />
+    
+            <!-- Texto -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-orange-500">Prazer, eu sou Pedro Soares</h1>
+                <p id="dynamic-text" class="text-2xl font-medium text-gray-300"></p>
+                <p id="description" class="text-2xl font-medium text-gray-300 mt-5">Formado em sistemas de informação, certificado CTFL</p>
+                <button class="bg-blue-500 font-bold text-white py-2 px-2 my-10 rounded" >Vamos nos conhecer!</button>
+            </div>
+            
+        </div>
     </section>
     
-    <section id="experiencia">
-        <h2>Experiência</h2>
-        <ul>
-            <li>Analista de Testes - Empresa X</li>
-            <li>Desenvolvedor de Testes - Empresa Y</li>
-        </ul>
+
+    <section id="sobre" class="py-20 text-center">
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Sobre Mim</h2>
+        <p class="max-w-2xl mx-auto">Sou QA e entusiasta de tecnologia, buscando sempre aprender e melhorar minhas habilidades.</p>
     </section>
-    
-    <section id="habilidades">
-        <h2>Habilidades</h2>
+
+    <section class="max-w-4xl mx-auto py-10">
+        <h2 class="text-3xl font-bold mb-6 text-orange-500">Experiência</h2>
+        <div class="relative border-l-4 border-gray-300 pl-6">
+          
+          <!-- Item 1 -->
+          <div class="mb-8 relative">
+            <div class="absolute -left-[11px] top-[5px] w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+            <h3 class="text-xl text-orange-500 font-semibold ml-8">Projetus TI</h3>
+            <p class="ml-8 text-blue-400">Analista de testes - QA - Juiz de Fora - MG</p>
+            <p class="ml-8 text-blue-400">• 2022 - Até o momento</p>
+            <p class="mt-2 ml-8">
+                Atuo na garantia da qualidade de software de um sistema contábil, sendo responsável pelos testes do módulo de Folha de Pagamento, o que contribuiu diretamente para a redução das demandas de suporte nessa área. 
+                <br><br>Desenvolvi e implementei testes automatizados em Cypress, otimizando a cobertura de testes e a detecção precoce de falhas. Além disso, realizo testes manuais para garantir a robustez e a confiabilidade das entregas.
+            </p>
+          </div>
+      
+          <!-- Item 2 -->
+          <div class="mb-8 relative">
+            <div class="absolute -left-[11px] top-[5px] w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+            <h3 class="text-xl text-orange-500 font-semibold ml-8">Crowdtest, uTest</h3>
+            <p class="ml-8 text-blue-400">Tester Freelancer • 2023 - 2024</p>
+            <p class="mt-2 ml-8">
+                Realização  de testes manuais exploratórios e de confirmação com o objetivo de encontrar defeitos e confirmar correções. 
+            </p>
+          </div>
+      
+          <!-- Adicione mais itens conforme necessário -->
+          <div class="mb-8 relative">
+            <div class="absolute -left-[11px] top-[5px] w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+            <h3 class="text-xl text-orange-500 font-semibold ml-8">UAITEC</h3>
+            <p class="ml-8 text-blue-400">Professor de informática • 2021</p>
+            <p class="mt-2 ml-8">
+                Ministrei aulas de pacote office (Word, Excel e Powerpoint) e informática básica para alunos de diversas idades
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="habilidades" class="py-20 text-center">
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Habilidades</h2>
         <p>QA, Testes Automatizados, Cypress, K6, DevOps básico.</p>
     </section>
-    
-    <section id="contato">
-        <h2>Contato</h2>
+
+    <section id="contato" class="py-20 text-center">
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Contato</h2>
         <p>Email: seuemail@example.com</p>
         <p>GitHub: github.com/seuperfil</p>
     </section>
-    
     <script src="script.js"></script>
+
 </body>
 </html>

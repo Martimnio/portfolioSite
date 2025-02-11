@@ -1,80 +1,13 @@
 /* Importando uma fonte moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    object-fit: cover;
+    object-position: 0% 50%;
 }
 
-body {
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
-}
-
-header {
-    background-color: #1e1e1e;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
-    font-size: 24px;
-    color: #ff9800;
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff9800;
-}
-
-section {
-    padding: 100px 20px;
-    margin-top: 60px;
-}
-
-h2 {
-    color: #ff9800;
-    margin-bottom: 20px;
-}
-
-p, li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Adicionando efeito de hover nos links */
-a {
-    transition: all 0.3s;
-}
-
-a:hover {
-    color: #ff9800;
-}
