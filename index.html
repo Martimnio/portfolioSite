@@ -9,9 +9,9 @@
 </head>
 <body class="bg-gray-900 text-white">
     <header class="bg-gray-800 py-4 px-6 fixed w-full flex justify-between items-center shadow-lg">
-        <h1 class="text-2xl font-bold text-orange-500">Pedro</h1>
+        <h1 class="text-2xl font-bold text-orange-500 mr-0">Pedro</h1>
         <nav>
-            <ul class="flex space-x-6">
+            <ul class="hidden md:flex flex space-x-6">
                 <li><a href="#sobre" class="hover:text-orange-400">Sobre</a></li>
                 <li><a href="#experiencia" class="hover:text-orange-400">Experiência</a></li>
                 <li><a href="#habilidades" class="hover:text-orange-400">Habilidades</a></li>
@@ -23,14 +23,17 @@
     <section id="hero" class="flex items-center min-h-screen bg-gray-900 text-white px-8">
         <div class="flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto">
             <!-- Imagem -->
-            <img src="89a749c2-7ef6-4a89-9c09-83bbc5fb7b03.jpeg" alt="Pedro's photo" class="w-60 h-60 rounded-full border-4 border-orange-500 shadow-lg object-cover"/>
+            <img src="89a749c2-7ef6-4a89-9c09-83bbc5fb7b03.jpeg" alt="Pedro's photo" class="animate-rotate-x animate-duration-[1ms] w-80 h-80 rounded-full border-4 border-orange-500 shadow-lg object-cover"/>
     
             <!-- Texto -->
             <div class="text-center md:text-left">
                 <h1 class="text-4xl font-bold text-orange-500">Prazer, eu sou Pedro Soares</h1>
                 <p id="dynamic-text" class="text-2xl font-medium text-gray-300"></p>
-                <p id="description" class="text-1xl font-medium text-gray-300 mt-5">Formado em sistemas de informação, certificado CTFL</p>
-                <button class="bg-blue-500 font-bold text-white py-2 px-2 my-10 rounded" >Vamos nos conhecer!</button>
+                <p id="description" class="text-1xl font-medium text-gray-300 mt-5">Formado em sistemas de informação e certificado CTFL com 3 anos de experiência em testes de software</p>
+                <div id="buttons" class="flex flex-col md:flex-row">
+                  <a class="bg-blue-500 font-bold text-white py-2 px-2 my-5 mr-5 rounded" href="https://wa.me/5532991300094" target="_blank">Vamos nos conhecer!</a>
+                  <a class="bg-orange-500 font-bold text-white py-2 px-2 my-5 rounded" href="Currículo Pedro Soares.pdf" target="_blank">Baixe meu currículo</a>
+                </div>
             </div>
             
         </div>
