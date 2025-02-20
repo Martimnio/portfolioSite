@@ -1,3 +1,9 @@
+import {
+    Ripple,
+    initTWE,
+  } from "tw-elements";
+  
+  initTWE({ Ripple });
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("dynamic-text");
   const phrases = ["|Analista QA", "|Especialista em Testes", "|Entusiasta de Tecnologia"];
